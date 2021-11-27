@@ -1,5 +1,6 @@
 <p>getkey works!</p>
 
-Email : <input id="name" type="text" [(ngModel)]="userEmail"/>
+Email : <input id="name" type="text" [(ngModel)]="userEmail.email"/>
 
 <p *ngIf="userKey && userEmail">Access Key is : {{userKey}}</p>
+<button (click)="PostEmail()">Get Key</button>
